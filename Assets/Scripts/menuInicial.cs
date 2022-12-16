@@ -2,27 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class menuInicial : MonoBehaviour
+public class MenuInicial : MonoBehaviour
 {
-    public AudioSource somTecla;
-    // Start is called before the first frame update
-    
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void cenaJogo()
+    public AudioSource somTecla;        
+    public void CenaJogo()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Jogo1");
     }
-    public void sairJogo()
+    public void SairJogo()
     {
         Application.Quit();
     }

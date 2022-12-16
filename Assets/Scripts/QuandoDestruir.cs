@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class QuandoDestruir : MonoBehaviour
 {
-    public AudioSource DeadSong;
+    public AudioClip audioclip;
+    
     // Start is called before the first frame update
     private void OnDestroy()
     {
-        DeadSong.Play();
+        AudioSource.PlayClipAtPoint(audioclip, Camera.main.transform.position);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
 }
